@@ -1,0 +1,465 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins';
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: rgb(1, 0, 40);
+    color: white;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 70px;
+    background-color: rgb(3, 3, 45);
+    font-weight: 500;
+    font-style: normal;
+    font-size: 1rem;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    font-weight: 400;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0 23px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li a:hover {
+    color: rgb(173, 173, 255);
+    font-size: 1.01rem;
+}
+
+.left {
+    font-size: 1.5rem;
+}
+
+.firstsection {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 25px 0;
+    align-items: center;
+}
+
+.firstsection>div {
+    width: 39%;
+}
+
+.leftsection {
+    /* background-color: red; */
+    font-size: 2rem;
+    /* width: 100%; */
+    margin-left: 120px;
+}
+
+.rightsection img {
+    width: 110%;
+    margin-top: 50px;
+}
+
+.purple {
+    color: rgb(167, 73, 255);
+}
+
+#element {
+    color: rgb(150, 67, 228);
+}
+
+.secondsection {
+    max-width: 88vw;
+    margin: auto;
+    margin-bottom: 100px;
+}
+
+h1 {
+    margin-left: 110px;
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+p {
+    margin-left: 110px;
+    font-size: 1.3rem;
+}
+
+.secondsectioncontent {
+    display: flex;
+    margin-top: 20px;
+}
+
+.secondsection img {
+    width: 50%;
+    margin-left: 70px;
+}
+
+.secondsection p {
+    margin-top: 50px;
+    margin-right: 50px;
+}
+
+.thirdsection {
+    padding: 20px;
+}
+
+.thirdsection h1 {
+    text-align: left;
+    margin-bottom: 50px;
+    margin-left: 170px;
+}
+
+.skills {
+    display: flex;
+    flex-direction: column;
+    margin-left: 225px;
+}
+
+.skillset {
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+    /* Add space between different skills */
+}
+
+
+.skillsicon {
+    margin-right: 15px;
+    /* Adjust the margin as needed to reduce the space */
+}
+
+.skillsicon img {
+    width: 78px;
+    /* Adjust the size as needed */
+    height: auto;
+}
+
+.skillsdesc {
+    max-width: 930px;
+    margin-left: 149px;
+}
+
+.skillsdesc p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    color: white;
+    /* Changed to a darker color for better readability */
+    margin: 0;
+}
+
+.fourthsection {
+    padding: 20px;
+}
+
+.fourthsection h1 {
+    text-align: left;
+    margin-bottom: 40px;
+    margin-left: 176px;
+    font-weight: bold;
+}
+
+.experience {
+    margin-left: 235px;
+    margin-bottom: 40px;
+}
+
+.experience-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    margin-right: 20px;
+}
+
+.logo img {
+    width: 50px;
+    /* Adjust the size as needed */
+    height: auto;
+    vertical-align: middle;
+}
+
+.position {
+    margin-right: 20px;
+    flex-grow: 1;
+    /* Allows position to take available space */
+}
+
+.position h2 {
+    font-size: 1.2rem;
+    margin: 0;
+    font-weight: bold;
+}
+
+.position h3 {
+    font-size: 1rem;
+    margin: 0;
+    font-weight: normal;
+}
+
+.dates {
+    text-align: right;
+    margin-right: 120px;
+}
+
+.dates p {
+    font-size: 1rem;
+    margin: 0;
+    font-weight: bold;
+}
+
+.experience-desc {
+    margin-top: 10px;
+    margin-left: 68px;
+    margin-right: 80px;
+}
+
+.experience-desc p {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #c9c9c9;
+    margin: 0;
+}
+
+
+/* Footer styles */
+.footer {
+    background-color: rgb(3, 3, 45);
+    padding: 40px 0;
+    color: white;
+    text-align: left;
+    margin-top: 40px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+.footer-left,
+.footer-center,
+.footer-right {
+    flex: 1;
+    min-width: 200px;
+    margin: 20px;
+    margin-left: 20px;
+}
+
+/* Footer titles */
+.footer-left h3,
+.footer-center h3,
+.footer-right h3 {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+/* Footer paragraphs */
+.footer-left p,
+{
+line-height: 1.5;
+}
+
+.footer-center p {
+    margin-left: 10px;
+}
+
+.footer-right p {}
+
+.footer-left p.footer-company-about {
+    font-size: 1rem;
+    color: #c9c9c9;
+    margin-left: 0px;
+}
+
+/* Footer contact section styles */
+.footer-contact {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.footer-contact i {
+    margin-right: 10px;
+    font-size: 1.5rem;
+}
+
+/* Footer icons */
+.footer-icons a {
+    margin: 0 10px;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.footer-icons {
+    margin-left: -10px;
+}
+
+/* Footer links */
+.footer-links {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin: 5px 0;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+/* Footer company name */
+.footer-company-name {
+    margin-top: 20px;
+    font-size: 1rem;
+}
+
+/* Individual classes for better margin and placement management */
+.footer-left .footer-about {
+    margin-bottom: 15px;
+}
+
+.footer-center .footer-contact {
+    margin-bottom: 15px;
+}
+
+.footer-right .footer-links,
+.footer-right .footer-company-name {
+    margin-bottom: 15px;
+}
+
+/* Specific classes for each element in the footer sections */
+.footer-left .footer-about-title {
+    margin-bottom: 10px;
+}
+
+.footer-center .footer-contact-title {
+    margin-bottom: 10px;
+    margin-left: 80px;
+}
+
+.footer-center .footer-contact-item {
+    margin-bottom: 5px;
+}
+
+.footer-right .footer-links-title {
+    margin-bottom: 10px;
+}
+
+.footer-right .footer-link-item {
+    margin-bottom: 5px;
+}
+
+
+
+
+/* Myfooter CSS */
+
+.my-footer-container {
+    background-color: rgb(15, 0, 12);
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-around; */
+    /* align-items: center; */
+    height: 350px;
+}
+
+.my-footer-title-1 {
+    font-size: 21px;
+    margin-left: 170px;
+    margin-bottom: 15px;
+    margin-top: 70px;
+}
+
+.my-footer-title-2 {
+    font-size: 21px;
+    margin-left: 100px;
+    margin-bottom: 15px;
+    margin-top: 70px;
+}
+
+.my-footer-title-3 {
+    font-size: 21px;
+    margin-left: 90px;
+    margin-bottom: 15px;
+    margin-top: 70px;
+}
+
+.my-footer-title-4 {
+    font-size: 21px;
+    margin-left: 52px;
+    margin-bottom: 15px;
+    margin-top: 70px;
+}
+
+.my-footer-1-p {
+    max-width: 300px;
+    margin-left: 170px;
+    font-size: 15px;
+    color: rgb(172, 172, 172);
+}
+
+.socialmedia-container {
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-around; */
+    align-items: center;
+    margin-left: 100px;
+}
+
+.socialmedia-icon img {
+    width: 18px;
+}
+
+.socialmedia-name {
+    margin-left: 10px;
+    margin-bottom: 5px;
+}
+
+.contact-container {
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-around; */
+    align-items: center;
+    margin-left: 90px;
+}
+
+.my-footer-link-item {
+    font-size: 15px;
+    color: #c9c9c9 !important;
+    margin-left: 54px;
+    text-decoration: none !important;
+    list-style: none;
+}
+
+.my-footer-link-item a {
+    color: #c9c9c9 !important;
+    text-decoration: none !important;
+}
+
+.my-footer-link-item a:hover {
+    text-decoration: underline !important;
+} 
